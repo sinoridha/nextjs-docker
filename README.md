@@ -1,6 +1,6 @@
 # nextjs-docker
 
-This is initial project next.js with docker.
+This is initial project next.js (SSR) with docker.
 
 Specification :
 * start with docker image node:10 (node version v10.15.3)

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+rm ./Dockerfile 
+cp ./Dockerfile.prod ./Dockerfile 
+docker build -t nextjs:init . && docker run -p 3000:3000 nextjs:init

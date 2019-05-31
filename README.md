@@ -15,7 +15,7 @@ Install docker on your local machine.
 
 ## Build on Docker 
 
-Enterance script :
+Entrance scripts :
 ```
 Run Development server : $ ./build-dev
 Run Staging server : $ ./build-stg

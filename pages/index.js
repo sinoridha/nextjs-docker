@@ -15,12 +15,14 @@ function PostLink(props) {
 }
 
 function Index(props) {
+    console.log('publicConf', publicConf);
     return (
         <div>
             <Head>
                 <title>{props.shows[0].show.name}</title>
             </Head>
             <Layout>
+                {/* <h1>My Blog</h1> */}
                 <h1>My Blog | env : {publicConf.env}</h1>
                 <ul>
                     <PostLink id="hello-nextjs" title="Hello Next.js" />

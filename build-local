@@ -4,9 +4,5 @@
 rm -rf ./Dockerfile 
 cp ./Dockerfile.dev ./Dockerfile 
 
-# Prepare env file
-rm -rf ./env.js
-cp ./env.dev.js ./env.js
-
 # Build and run
 docker build --no-cache -t nextjs:init . && docker run -p 3000:3000 nextjs:init

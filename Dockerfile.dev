@@ -8,6 +8,7 @@ COPY pages ./pages
 COPY utils ./utils
 
 # Files
+COPY env.js ./
 COPY package*.json ./
 COPY server.js ./
 COPY yarn.lock ./

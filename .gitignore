@@ -4,3 +4,4 @@ node_modules
 coverage
 Dockerfile
 next.config.js
+env.js

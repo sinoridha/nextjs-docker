@@ -13,27 +13,31 @@ Specification :
 
 Install docker on your local machine.
 
-## Run Local on Docker
+## Build on Docker 
 
-Run on port 3000 in your local machine. (it will run  yarn dev)
-
+Enterance script :
 ```
-$ ./build-dev
+Run Development server : $ ./build-dev
+Run Staging server : $ ./build-stg
+Run Production server : $ ./build-prod
 ```
-
-
-## Run Build Production on Docker
-
-Run on port 3000 for build production (it will run yarn build and yarn start)
-
-```
-$ ./build-server
-```
+App will run on port 3000.
 
 ## Run Local WITHOUT Docker
 
-Run on port 3000 in your local machine. 
+Prepare your `env.js` first. 
 
 ```
-$ yarn start
+$ yarn install
+$ yarn dev
 ```
+Run on port 3000 in your local machine. 
+
+## Run Local WITH Docker
+
+Prepare your `env.js` first. 
+
+```
+$ ./build-local
+```
+App will run on port 3000.

@@ -4,5 +4,12 @@
 rm -rf ./Dockerfile 
 cp ./Dockerfile.dev ./Dockerfile 
 
-# Build and run
-docker build --no-cache -t nextjs:init . && docker run -p 3000:3000 nextjs:init
+FILE=./env.js
+if [ -f "$FILE" ]; then
+    # Build and run
+    docker build --no-cache -t nextjs:init . && docker run -p 3000:3000 nextjs:init
+
+else 
+    echo "ERROR: $FILE does not exist, aplication can't run."
+fi
+

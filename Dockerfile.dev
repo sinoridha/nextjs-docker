@@ -2,11 +2,17 @@ FROM node:10
 
 WORKDIR /usr/src/app
 
+# Folders
 COPY components ./components
 COPY pages ./pages
+COPY utils ./utils
+
+# Files
 COPY package*.json ./
 COPY server.js ./
 COPY yarn.lock ./
+COPY next.config.js ./
+COPY .babelrc ./
 
 RUN yarn install
 

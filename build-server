@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# Preapare docker file
 rm ./Dockerfile 
 cp ./Dockerfile.prod ./Dockerfile 
+
+# Prepare env file
+rm -rf ./next.config.js
+cp ./next.config.prod.js ./next.config.js
+
+# Build and run
 docker build -t nextjs:init . && docker run -p 3000:3000 nextjs:init

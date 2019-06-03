@@ -45,3 +45,9 @@ Prepare your `env.js` first.
 $ ./build-local
 ```
 App will run on port 3000.
+
+## Run Json Server
+
+```
+$ yarn jsonserver
+```

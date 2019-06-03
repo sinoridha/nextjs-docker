@@ -21,9 +21,11 @@ function Index(props) {
 
     const changeName = () => {
         setAccount(prevAccount => {
-            return {...prevAccoun, name: "Bro"};
+            return {...prevAccount, name: "Bro"};
         });
     }
+
+    console.log('publicConf', publicConf);
 
     return (
         <div>
@@ -31,7 +33,7 @@ function Index(props) {
                 <title>{props.shows[0].show.name}</title>
             </Head>
             <Layout>
-                <h1>My Blog | env : {publicConf.env}</h1>
+                <h1>Next.js - Docker Boilerplate | env : {publicConf.env}</h1>
                 <h2>Name : {account.name}</h2>
                 <ul>
                     <PostLink id="hello-nextjs" title="Hello Next.js" />

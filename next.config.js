@@ -1,11 +1,15 @@
 const {env} = require('./env')
 
-module.exports = {
-    publicRuntimeConfig: env
-}
-
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
     /*global process*/
     enabled: process.env.ANALYZE === 'true',
 })
-module.exports = withBundleAnalyzer({})
+
+/*global process*/
+if (process.env.ANALYZE === 'true') {
+    module.exports = withBundleAnalyzer({})
+} else {
+    module.exports = {
+        publicRuntimeConfig: env
+    }
+}

@@ -2,7 +2,8 @@
   "env": {
     "browser": true,
     "es6": true,
-    "commonjs": true
+    "commonjs": true,
+    "jest/globals": true
   },
   "extends": "eslint:recommended",
   "parserOptions": {
@@ -12,11 +13,16 @@
     },
     "sourceType": "module"
   },
-  "plugins": ["react"],
+  "plugins": ["react", "jest"],
   "rules": {
     "indent": ["error", 4],
     "react/prop-types": 0,
     "react/jsx-uses-vars": [2],
-    "no-console": 0
+    "no-console": 0,
+    "jest/no-disabled-tests": "warn",
+    "jest/no-focused-tests": "error",
+    "jest/no-identical-title": "error",
+    "jest/prefer-to-have-length": "warn",
+    "jest/valid-expect": "error"
   }
 }

@@ -51,3 +51,10 @@ App will run on port 3000.
 ```
 $ yarn jsonserver
 ```
+location of json.db : ./tests/json-server/db.json
+
+## Analyze bundle size
+
+```
+$ yarn analyze
+``` 

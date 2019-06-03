@@ -8,12 +8,14 @@
     "build": "next build",
     "start": "NODE_ENV=production node server.js",
     "test": "jest --verbose --collectCoverage",
-    "jsonserver" : "node ./tests/json-server/server.js"
+    "jsonserver": "node ./tests/json-server/server.js",
+    "analyze": "ANALYZE=true next build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@next/bundle-analyzer": "^8.1.0",
     "axios": "^0.18.0",
     "express": "^4.16.4",
     "isomorphic-unfetch": "^3.0.0",

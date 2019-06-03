@@ -1,3 +1,4 @@
+// http://zetcode.com/javascript/jest/
 import axios from 'axios';
 import Users from './users';
 
@@ -21,5 +22,7 @@ test('should fetch users', () => {
 
     axios.get.mockImplementation(() => Promise.resolve(resp));
 
-    Users.all().then(resp => expect(resp.data).toEqual(users));
+    Users.all().then(resp => {
+        expect(resp.data).toEqual(users)
+    });
 });

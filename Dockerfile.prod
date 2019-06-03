@@ -6,6 +6,7 @@ WORKDIR /usr/src/app
 COPY components ./components
 COPY pages ./pages
 COPY utils ./utils
+COPY context ./context
 
 # Files
 COPY env.js ./

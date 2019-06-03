@@ -21,7 +21,7 @@ function Index(props) {
 
     const changeName = () => {
         setAccount(prevAccount => {
-            return {...prevAccount, name: "Bro"};
+            return {...prevAccoun, name: "Bro"};
         });
     }
 

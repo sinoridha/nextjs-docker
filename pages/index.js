@@ -22,7 +22,6 @@ function Index(props) {
                 <title>{props.shows[0].show.name}</title>
             </Head>
             <Layout>
-                {/* <h1>My Blog</h1> */}
                 <h1>My Blog | env : {publicConf.env}</h1>
                 <ul>
                     <PostLink id="hello-nextjs" title="Hello Next.js" />
@@ -30,6 +29,31 @@ function Index(props) {
                     <PostLink id="deploy-nextjs" title="Deploy apps with Zeit" />
                 </ul>
             </Layout>
+            <style jsx>{`
+                h1,
+                a {
+                    font-family: 'Arial';
+                    color: red;
+                }
+
+                ul {
+                    padding: 0;
+                }
+
+                li {
+                    list-style: none;
+                    margin: 5px 0;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: red;
+                }
+
+                a:hover {
+                    opacity: 0.6;
+                }
+            `}</style>
         </div>
     )
 }

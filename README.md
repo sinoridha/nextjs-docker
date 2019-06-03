@@ -8,6 +8,7 @@ Specification :
 * next.js 8.0.3
 * eslint
 * env variable production and dev with (next.config.js)
+* example of style component ( /pages/index)
 
 ## Prerequisite
 

@@ -8,7 +8,10 @@ Specification :
 * next.js 8.0.3
 * eslint
 * env variable production and dev with (next.config.js)
-* example of style component ( /pages/index)
+* example of usage of styled component ( /pages/index)
+* build in json server on port 3001 ( /test/json-server)
+* example unit test with mocking axios request ( /tests/example/axios-mocking)
+* example of function unit test ( /utils/arith.test.js )
 
 ## Prerequisite
 

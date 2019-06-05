@@ -18,32 +18,32 @@ Specification :
 
 Install docker on your local machine.
 
-## Build on Docker 
+## Build on Docker
 
 Entrance scripts :
 ```
-Run Development server : $ ./build-dev
-Run Staging server : $ ./build-stg
-Run Production server : $ ./build-prod
+Run Development server : $ ./build/dev
+Run Staging server : $ ./build/stg
+Run Production server : $ ./build/prod
 ```
 App will run on port 3000.
 
 ## Run Local WITHOUT Docker
 
-Prepare your `env.js` first. 
+Prepare your `env.js` first.
 
 ```
 $ yarn install
 $ yarn dev
 ```
-Run on port 3000 in your local machine. 
+Run on port 3000 in your local machine.
 
 ## Run Local WITH Docker
 
-Prepare your `env.js` first. 
+Prepare your `env.js` first.
 
 ```
-$ ./build-local
+$ ./build/local
 ```
 App will run on port 3000.
 
@@ -58,4 +58,4 @@ location of json.db : ./tests/json-server/db.json
 
 ```
 $ yarn analyze
-``` 
+```

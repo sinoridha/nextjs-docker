@@ -1,9 +1,9 @@
 // json.server.js 
 // https://github.com/typicode/json-server
 
-const jsonServer = require('../../node_modules/json-server')
+const jsonServer = require('json-server')
 const server = jsonServer.create()
-const router = jsonServer.router('./tests/json-server/db.json')
+const router = jsonServer.router('./src/tests/json-server/db.json')
 const middlewares = jsonServer.defaults()
 
 server.use(middlewares)

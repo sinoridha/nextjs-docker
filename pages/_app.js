@@ -1,5 +1,5 @@
 import App, { Container } from 'next/app';
-import { AccountProvider } from '~/context/AccountContext';
+import { AccountProvider } from '~/src/context/AccountContext';
 
 // DO NOT change default of _app.js of next.js if you dont have any idea what you do.
 // CHANGE ONLY for adding the provider.

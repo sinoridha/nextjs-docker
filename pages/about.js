@@ -1,5 +1,5 @@
-import Layout from '~/components/MyLayout.js'
-import {AccountContext} from '~/context/AccountContext'
+import Layout from '~/src/components/MyLayout.js'
+import {AccountContext} from '~/src/context/AccountContext'
 import { useContext } from 'react'
 
 export default function About() {

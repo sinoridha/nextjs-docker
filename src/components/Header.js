@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from '~/src/utils/link'
 
 const linkStyle = {
     marginRight: 15

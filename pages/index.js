@@ -1,10 +1,11 @@
-import Layout from '~/components/MyLayout.js'
-import Link from 'next/link'
-import fetch from 'isomorphic-unfetch'
-import Head from 'next/head'
-import { publicConf } from '~/utils/config'
-import {AccountContext} from '~/context/AccountContext'
-import { useContext } from 'react'
+import { useContext, useEffect, useState } from 'react'
+import Layout from '~/src/components/MyLayout.js'
+import Link from '~/src/utils/link'
+import Head from '~/src/utils/head'
+import request from '~/src/utils/request'
+import { publicConf } from '~/src/utils/config'
+import { getUser, setUser } from '~/src/services/account'
+import {AccountContext} from '~/src/context/AccountContext'
 
 function PostLink(props) {
     return (
@@ -18,14 +19,40 @@ function PostLink(props) {
 
 function Index(props) {
     const [account, setAccount] = useContext(AccountContext);
+    const [userId, setUserId] = useState(1);
 
     const changeName = () => {
         setAccount(prevAccount => {
-            return {...prevAccount, name: "Bro"};
+            return {...prevAccount, name: "The Name Changer"};
         });
+        // setAccount(userId + 1)
     }
 
-    console.log('publicConf', publicConf);
+    useEffect(() => {
+        // const updateAccount = async() => {
+        //     // setUser(userId);
+        //     const[ err, user] = await getUser(userId)
+        //     if (err) {
+        //         console.log('err', err)
+        //         alert('Ups, json-server not running')
+        //     } else {
+        //         setAccount({...account,name: user.data.first_name})
+        //     }
+        // }
+        // updateAccount()
+    }, []);
+
+    useEffect(() => {
+        // console.log('use effect 1');
+        const updateAccount = async() => {
+            await setUser(userId, (use) => {
+                console.log('on setUser');
+                console.log('user', use.first_name);
+                setAccount({...account,name: use.usefirst_name})
+            });
+        }
+        updateAccount()
+    }, []);
 
     return (
         <div>
@@ -33,7 +60,7 @@ function Index(props) {
                 <title>{props.shows[0].show.name}</title>
             </Head>
             <Layout>
-                <h1>Next.js - Docker Boilerplate | env : {publicConf.env}</h1>
+                <h1>Home | env : {publicConf.env}</h1>
                 <h2>Name : {account.name}</h2>
                 <ul>
                     <PostLink id="hello-nextjs" title="Hello Next.js" />
@@ -72,9 +99,8 @@ function Index(props) {
 }
 
 Index.getInitialProps = async function() {
-    const res = await fetch('http://api.tvmaze.com/search/shows?q=batman')
-    const data = await res.json()
-
+    const res = await request.default('http://api.tvmaze.com/search/shows?q=batman')
+    const data = res.data
     return {
         shows: data
     }

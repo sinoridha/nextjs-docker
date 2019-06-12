@@ -9,10 +9,10 @@ Specification :
 * eslint
 * env variable production and dev with (next.config.js)
 * example of usage of styled component ( /pages/index)
-* build in json server on port 3001 ( /test/json-server)
-* example unit test with mocking axios request ( /tests/example/axios-mocking)
+* build in json server on port 3001 ( /src/test/json-server)
+* example unit test with mocking axios request ( /src/tests/example/axios-mocking)
 * example of function unit test ( /utils/arith.test.js )
-* example context api as state management ( /context/account, /pages/_app.js, /pages/index.js )
+* example context api as state management ( /src/context/account, /pages/_app.js, /pages/index.js )
 
 ## Prerequisite
 

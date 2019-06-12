@@ -1,5 +1,5 @@
 import { withRouter } from 'next/router'
-import Layout from '~/components/MyLayout.js'
+import Layout from '~/src/components/MyLayout.js'
 
 function Post(props) {
     return (

@@ -7,8 +7,8 @@ export const AccountContext = createContext();
 
 export const AccountProvider = (props) => {
     const [account, setAccount] = useState({
-        name: 'Bli',
-        age: 40
+        name: '',
+        email: ''
     });
 
     return ( 

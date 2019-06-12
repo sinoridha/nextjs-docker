@@ -1,4 +1,4 @@
-import { add, mul, sub, div } from '~/utils/arith';
+import { add, mul, sub, div } from '~/src/utils/arith';
 
 test('2 + 3 = 5', () => {
     expect(add(2, 3)).toBe(5);

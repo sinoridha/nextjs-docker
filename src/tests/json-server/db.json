@@ -1,0 +1,72 @@
+{
+    "home": {
+        "square-banner": [
+            {
+                "id": "123",
+                "image" : "https://www.sehatq.com/public/img/article_thumb/5-pantangan-makanan-yang-wajib-dihindari-penderita-hipertensi-thumb-1556787659.jpg",
+                "title": "5 pantangan makanan wajib",
+                "category" : "Hidup sehat",
+                "date":"29 November 2019"
+            },
+            {
+                "id": "121",
+                "image" : "https://www.sehatq.com/public/img/article_thumb/waspada-kemungkinan-kandungan-anda-mengalami-gawat-janin-thumb-1557223631.jpg",
+                "title": "Waspada Gawat Janin Akibat Ganguan Peredaran Darah",
+                "category" : "Kehamilan",
+                "date":"21 November 2019"
+            },
+            {
+                "id": "120",
+                "image" : "https://www.sehatq.com/public/img/article_thumb/waspada-kemungkinan-kandungan-anda-mengalami-gawat-janin-thumb-1557223631.jpg",
+                "title": "Penyebab dan cara mengatasi jerawat",
+                "category" : "Kesehatan Kulit",
+                "date":"21 November 2019"
+            },
+            {
+                "id": "122",
+                "image" : "https://www.sehatq.com/public/img/article_thumb/waspada-kemungkinan-kandungan-anda-mengalami-gawat-janin-thumb-1557223631.jpg",
+                "title": "Apakah manfaat puasa untuk kesehatan",
+                "category" : "Hidup Sehat",
+                "date":"21 November 2019"
+            }
+        ],
+        "long-banner": [
+            {
+                "id": "22",
+                "image" : "https://www.sehatq.com/public/img/bg_omni.jpg"
+            }
+        ]
+    },
+    "users": [
+        {
+            "id": 1,
+            "first_name": "Robert",
+            "last_name": "Schwartz",
+            "email": "rob23@gmail.com"
+        },
+        {
+            "id": 2,
+            "first_name": "Lucy",
+            "last_name": "Ballmer",
+            "email": "lucyb56@gmail.com"
+        },
+        {
+            "id": 3,
+            "first_name": "Anna",
+            "last_name": "Smith",
+            "email": "annasmith23@gmail.com"
+        },
+        {
+            "id": 4,
+            "first_name": "Robert",
+            "last_name": "Brown",
+            "email": "bobbrown432@yahoo.com"
+        },
+        {
+            "id": 5,
+            "first_name": "Roger",
+            "last_name": "Bacon",
+            "email": "rogerbacon12@yahoo.com"
+        }
+    ]
+  }
